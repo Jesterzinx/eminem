@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eminem</title>
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            overflow-x: scroll;
+            overflow-y: hidden;
+        }
+
+        .container {
+            display: flex;
+            width: 200vw;
+            height: 100vh;
+        }
+
+        .tela {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .tela1 {
+            background: linear-gradient(to right, black, rgb(94, 94, 93));
+        }
+
+        .tela2 {
+            background: black;
+            color: white;
+        }
+
+        .eminem {
+            text-align: center;
+            font-size: 24px;
+        }
+
+        .nome {
+            font-size: 80px;
+        }
+
+        .foto {
+            width: 300px;
+            border-radius: 20px;
+            margin-top: 20px;
+        }
+
+        .botao {
+            padding: 12px 25px;
+            background: red;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        /* LISTA CENTRALIZADA */
+        .lista {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+            font-size: 30px;
+        }
+
+        .lista li {
+            margin: 15px 0;
+            transition: 0.3s;
+        }
+
+        .lista li:hover {
+            color: red;
+            transform: scale(1.1);
+        }
+    </style>
+
+</head>
+<body>
+
+<div class="container">
+
+    <!-- TELA 1 -->
+    <div class="tela tela1">
+        <p class="eminem">
+            Marshall Bruce Mathers III mais conhecido como <br>
+            <span class="nome">Eminem</span>
+        </p>
+
+        <img src="eminen.jpg" class="foto">
+
+        <a href="#lado">
+            <button class="botao">Ver mais →</button>
+        </a>
+    </div>
+
+    <!-- TELA 2 -->
+    <div class="tela tela2" id="lado">
+        <h1>Musicas de maior sucesso:</h1>
+<ul class="lista">
+    <li>
+        <a href="https://www.youtube.com/watch?v=_Yhyp-_hX2s" target="_blank">
+            Lose Yourself
+        </a>
+    </li>
+
+    <li>
+        <a href="https://www.youtube.com/watch?v=S9bCLPwzSC0" target="_blank">
+            Mockingbird
+        </a>
+    </li>
+
+    <li>
+        <a href="https://www.youtube.com/watch?v=YVkUvmDQ3HY" target="_blank">
+            Without Me
+        </a>
+    </li>
+</ul>
+    </div>
+
+</div>
+
+</body>
+</html>
